@@ -1,0 +1,26 @@
+<link rel="import"
+      href="../bower_components/polymer/polymer.html">
+
+<script>
+    // register a new element called proto-element
+    var ProtoElement = Polymer({
+        is: "proto-element",
+        // add a callback to the element's prototype
+        ready: function() {
+            this.innerHTML = "I'm a proto-element. Check out my prototype!"
+        },
+
+        created: function() {
+            console.log(this.localName + '#' + this.id + ' was created');
+        },
+
+        attached: function() {
+            console.log(this.localName + '#' + this.id + ' was attached');
+        },
+
+        detached: function() {
+            console.log(this.localName + '#' + this.id + ' was detached');
+        }
+
+    });
+</script>

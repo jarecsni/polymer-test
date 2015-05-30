@@ -1,0 +1,26 @@
+<link rel="import"
+      href="../bower_components/polymer/polymer.html">
+
+<dom-module id="zepto-element">
+    <template>
+        <!-- bind to the "owner" property -->
+        The result is <b>{{result}}</b>.
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "zepto-element",
+        properties: {
+            times: Number,
+            value: Number
+        },
+        ready: function() {
+            // set this element's owner property
+            this.result = this.times * this.value;
+        }
+    });
+</script>
+
+
+

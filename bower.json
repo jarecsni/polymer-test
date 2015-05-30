@@ -1,0 +1,19 @@
+{
+    "name": "polymer-test",
+    "version": "0.0.0",
+    "authors": [
+        "Janos Jarecsni <janos.jarecsni@gmail.com>"
+    ],
+    "description": "Playing with Polymer",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.0.0"
+    }
+}
